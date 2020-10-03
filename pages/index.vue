@@ -419,7 +419,7 @@
         this.fetchData()
       },
       async fetchData () {
-        let users = await axios.get(`http://127.0.0.1:8000/api/users?page=${this.page}`)
+        let users = await axios.get(`https://intense-dusk-20032.herokuapp.com/api/users?page=${this.page}`)
 
         this.users.push( ...users.data.data) 
 
